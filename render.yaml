@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: eliza-starter
+    env: node
+    buildCommand: |
+      apt-get update && apt-get install -y python3 build-essential
+      pnpm install
+      pnpm run build
+    startCommand: pnpm start
+    nodeVersion: ">=22"
+    envVars:
+      - key: NODE_ENV
+        value: production 
