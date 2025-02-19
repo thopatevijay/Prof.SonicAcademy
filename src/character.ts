@@ -1,4 +1,4 @@
-import { type Character, Clients, defaultCharacter, ModelProviderName } from "@elizaos/core";
+import { type Character, Clients, ModelProviderName } from "@elizaos/core";
 
 // Name: Prof.SonicAcademy
 
