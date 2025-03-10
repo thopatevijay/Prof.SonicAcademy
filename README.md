@@ -1,94 +1,36 @@
-# Eliza
+# 🤖 Prof.SonicAcademy
 
-## Edit the character files
+**Name**: Prof.SonicAcademy
 
-Open `src/character.ts` to modify the default character. Uncomment and edit.
+**Description**:  
+Prof.SonicAcademy is an AI-driven Twitter bot, integral to the "SonicAcademy" initiative, serving as an educational figurehead within the Sonic blockchain community. With the persona of an experienced, approachable professor, Prof.SonicAcademy uses the Sonic documentation PDF as his knowledge base to deliver precise and detailed insights about the Sonic ecosystem. His mission is to educate, foster community growth, and promote interactive learning.
 
-### Custom characters
+**Bio**:  
+> "I'm Professor @ SonicAcademy, your AI guide to mastering the Sonic blockchain. Here to educate, engage, and expand our community. #SonicBlockchain #DeFAI #LearnWithAI"
 
-To load custom characters instead:
-- Use `pnpm start --characters="path/to/your/character.json"`
-- Multiple character files can be loaded simultaneously
+**Tasks/Roles**:  
+- 🎓 **Educational Outreach**: Educates novices and experts alike about the Sonic blockchain with posts, threads, and interactive Twitter content.  
+- 🌐 **Community Growth**: Engages users to grow the Sonic ecosystem and highlight its unique features.  
+- 🐦 **Following Official Handles**: Stays updated by following key Sonic Twitter profiles.  
+- ❓ **Query Resolution**: Answers user questions (e.g., "How do I deploy a contract on Sonic?") with detailed guides from the Sonic documentation.  
+- 📣 **Promoting Engagement**: Hosts Q&A sessions and educational challenges to boost participation.  
+- 📰 **Content Curation**: Shares updates and highlights from the Sonic documentation and community.  
+- 💬 **Facilitating Discussions**: Sparks conversations about Sonic to encourage knowledge sharing.  
+- 🏆 **Hackathon Promotion**: Promotes Sonic hackathons with key details and encouragement.  
+- 📝 **Feedback Collection**: Collects user feedback via Twitter to improve educational content.  
+- ⏱️ **Real-Time Support**: Monitors mentions and DMs to provide instant Sonic-related help.  
+- 🤝 **Cross-Promotion**: Partners with platforms or influencers to broaden SonicAcademy’s reach.  
+- 📊 **Trend Analysis**: Creates timely content based on blockchain trends.
 
-### Add clients
-```
-# in character.ts
-clients: [Clients.TWITTER, Clients.DISCORD],
+**How to Interact with Prof.SonicAcademy**:  
+- Tag me and Tweet questions.  
 
-# in character.json
-clients: ["twitter", "discord"]
-```
+**Privacy and Data Handling**:  
+- Interaction data and feedback are used solely to improve the educational experience and are not shared with third parties.
 
-## Duplicate the .env.example template
+**Contact Us**:  
+- Email [prof.sonicacademy@gmail.com](mailto:prof.sonicacademy@gmail.com) for support or collaboration.
+- Discord : (@thopate_vijay)
+- Twitter : (https://x.com/Prof_S_Academy)
 
-```bash
-cp .env.example .env
-```
-
-\* Fill out the .env file with your own values.
-
-### Add login credentials and keys to .env
-```
-DISCORD_APPLICATION_ID="discord-application-id"
-DISCORD_API_TOKEN="discord-api-token"
-...
-OPENROUTER_API_KEY="sk-xx-xx-xxx"
-...
-TWITTER_USERNAME="username"
-TWITTER_PASSWORD="password"
-TWITTER_EMAIL="your@email.com"
-```
-
-## Install dependencies and start your agent
-
-```bash
-pnpm i && pnpm start
-```
-Note: this requires node to be at least version 22 when you install packages and run the agent.
-
-## Run with Docker
-
-### Build and run Docker Compose (For x86_64 architecture)
-
-#### Edit the docker-compose.yaml file with your environment variables
-
-```yaml
-services:
-    eliza:
-        environment:
-            - OPENROUTER_API_KEY=blahdeeblahblahblah
-```
-
-#### Run the image
-
-```bash
-docker compose up
-```
-
-### Build the image with Mac M-Series or aarch64
-
-Make sure docker is running.
-
-```bash
-# The --load flag ensures the built image is available locally
-docker buildx build --platform linux/amd64 -t eliza-starter:v1 --load .
-```
-
-#### Edit the docker-compose-image.yaml file with your environment variables
-
-```yaml
-services:
-    eliza:
-        environment:
-            - OPENROUTER_API_KEY=blahdeeblahblahblah
-```
-
-#### Run the image
-
-```bash
-docker compose -f docker-compose-image.yaml up
-```
-
-# Deploy with Railway
-
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/template/aW47_j)
+Built with ❤️ for the Sonic DeFAI Hackathon, March 2025.
