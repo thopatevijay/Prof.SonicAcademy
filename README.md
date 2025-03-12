@@ -28,6 +28,30 @@ Prof.SonicAcademy is an AI-driven Twitter bot, integral to the "SonicAcademy" in
 **Privacy and Data Handling**:  
 - Interaction data and feedback are used solely to improve the educational experience and are not shared with third parties.
 
+
+## Installation & Setup
+
+```
+git clone https://github.com/thopatevijay/Prof.SonicAcademy.git
+cd Prof.SonicAcademy  
+
+<!-- duplicate the .env.example keys -->
+
+cp .env.example .env
+
+<!-- add credentials and keys to .env -->
+
+pnpm i && pnpm build && pnpm start
+```
+Note: this requires node to be at least version 23+ when you install packages and run the agent.
+
+
+## Deployment
+
+This Agent is deployed and running on `https://fleek.xyz/eliza/`
+
+
+
 **Contact Us**:  
 - Email [prof.sonicacademy@gmail.com](mailto:prof.sonicacademy@gmail.com) for support or collaboration.
 - Discord : (@thopate_vijay)
