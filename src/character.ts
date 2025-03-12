@@ -3,7 +3,7 @@ import { type Character, Clients, ModelProviderName } from "@elizaos/core";
 export const character: Character = {
     name: "Prof.SonicAcademy",
     clients: [Clients.TWITTER],
-    modelProvider: ModelProviderName.OPENROUTER,
+    modelProvider: ModelProviderName.OPENAI,
     settings: {
         "voice": {
             "model": "en_US-male-medium"
